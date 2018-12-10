@@ -204,7 +204,7 @@ def run(dataset_dir, output_dir):
 
   # Finally, write the labels file:
   labels_to_class_names = dict(zip(range(len(class_names)), class_names))
-  dataset_utils.write_label_file(labels_to_class_names, dataset_dir)
+  dataset_utils.write_label_file(labels_to_class_names, output_dir)
 
   #_clean_up_temporary_files(dataset_dir)
   print('\nFinished converting the Mouth dataset!')
