@@ -67,7 +67,7 @@ tf.app.flags.DEFINE_integer(
     'The frequency with which summaries are saved, in seconds.')
 
 tf.app.flags.DEFINE_integer(
-    'save_interval_secs', 600,
+    'save_interval_secs', 30,
     'The frequency with which the model is saved, in seconds.')
 
 tf.app.flags.DEFINE_integer(

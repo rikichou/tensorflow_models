@@ -23,13 +23,15 @@ from datasets import flowers
 from datasets import imagenet
 from datasets import mnist
 from datasets import mouth
+from datasets import eye
 
 datasets_map = {
     'cifar10': cifar10,
     'flowers': flowers,
     'imagenet': imagenet,
     'mnist': mnist,
-    'mouth': mouth
+    'mouth': mouth,
+    'eye' : eye
 }
 
 

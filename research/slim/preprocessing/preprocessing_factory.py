@@ -24,6 +24,7 @@ from preprocessing import cifarnet_preprocessing
 from preprocessing import inception_preprocessing
 from preprocessing import lenet_preprocessing
 from preprocessing import vgg_preprocessing
+from preprocessing import mobilenet_v1_tiny_preprocessing
 
 slim = tf.contrib.slim
 
@@ -54,6 +55,8 @@ def get_preprocessing(name, is_training=False):
       'inception_resnet_v2': inception_preprocessing,
       'lenet': lenet_preprocessing,
       'mobilenet_v1': inception_preprocessing,
+      'mobilenet_v1_tiny' : mobilenet_v1_tiny_preprocessing,
+      'mobilenet_v1_tiny_128': mobilenet_v1_tiny_preprocessing,
       'mobilenet_v2': inception_preprocessing,
       'mobilenet_v2_035': inception_preprocessing,
       'mobilenet_v2_140': inception_preprocessing,
